@@ -3,4 +3,8 @@ BallanceMapEditor
 
 A Editor For Ballance Map
 
-Requires SharpDX
+Lib:
+SharpDX.dll
+SharpDX.Direct2D.dll
+SharpDX.DXGI.dll
+
