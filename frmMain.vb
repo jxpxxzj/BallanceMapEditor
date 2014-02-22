@@ -42,7 +42,9 @@ Public Class frmMain
         Next
         Return -1
     End Function
-
+    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
+        MainLoop()
+    End Sub
     Private Sub Panel2_MouseDown(ByVal sender As Object, ByVal e As MouseEventArgs) Handles Panel2.MouseDown
         If e.Button = System.Windows.Forms.MouseButtons.Right Then
             Dim id = ReturnBlockID(e.Location)
@@ -494,11 +496,5 @@ err:
     End Sub
 #End Region
 
-    Private Sub Panel2_Paint(sender As Object, e As PaintEventArgs) Handles Panel2.Paint
-        MainLoop()
-    End Sub
 
-    Public Function AffineMatrix(angelX As Single, angelY As Single) As Matrix3x2
-
-    End Function
 End Class
